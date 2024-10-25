@@ -1,0 +1,253 @@
+@font-face {
+    font-family: Product Sans;
+    src: url(fonts/Product\ Sans\ Regular.ttf);
+}
+
+@font-face {
+    font-family:Product Sans B ;
+    src: url(fonts/Product\ Sans\ Bold.ttf);
+}
+
+
+
+
+*{  /*ao tilizar o * as estilização funcionara em toda a pagina*/
+    margin: 0; /*o margin determinar a margem entre a borda co coteudo e o espaço fora da borda*/
+    padding: 0; /*o padding determina o espaço entre o conteudo e a borda*/
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: product Sans B;
+}
+
+body::-webkit-scrollbar{
+
+    display: none; /*retira a barra de rolagem*/
+}
+
+
+/*inicio de edição da seção 1*/
+#main{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(150deg, rgb(255,166,0), rgb(255,94,0));
+}
+.nav-container{
+    position: static; /* a propriedade fixed no position fixa o elemento na pagina, caso ocorra o rolamento da pagina o elemento continua aparecendo na mesma posição.*/
+    display: flex; /*o display:flex promover o alinhamento dos elementos que estavam em bloco*/
+    align-items: center; 
+    justify-content: space-between; /*espaçamento entre os elementos*/
+    width: 100%;
+    height: 10vh;
+    z-index: 99;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.nav-container img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover; /*o object-fit:couver faz com quem a imagem mantenha a mesma proporção*/
+}
+
+
+.nav-container a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+   
+
+}
+.nav-menu{
+    display: flex;
+    gap: 50px; /*define o espaçamento entre os elementos inline*/
+
+}
+/*FINA DA ESTILIZAÇÃO DA SEÇÃO 1*/
+
+/*estilização da hero*/
+
+.hero{
+    position: relative;
+    display: flex;
+    align-items: center; /*realiza o alinhamento dos elementos verticalmente*/ 
+    justify-content: center; /*realiza o alinhamento dos elementos horizontalmente*/
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(150deg, rgb(255,166,0), rgb(255,94,0));
+
+}
+
+
+
+.hero h1{
+    color: white;
+    font-size: 21vw;
+
+}
+
+#fanta{
+    position: absolute;
+    width: 35%;
+    z-index: 2;
+
+}
+
+#laranja-cortada{
+    position:absolute;
+    width: 15%;
+    top: 10%;
+    left: 32%;
+    z-index: 1;
+}
+
+#laranja{
+    position: absolute;
+    width: 20%;
+    top: 55%;
+    right: 30%;
+    z-index: 3;
+}
+
+#folha{
+    position: absolute;
+    width: 18%;
+    top: 10%;
+    left: 0%;
+    transform: rotate(60deg);
+    
+}
+
+#folha2{
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    width: 12%;
+    transform: rotate(-90deg);
+}
+
+#folha3{
+    position: absolute;
+    width: 20%;
+    top: 10%;
+    right: 0%;
+}
+
+
+/*iniciando estilização da seção 2*/
+
+.two{
+    display: flex;
+    width:100%;
+    height: 100vh;
+    background-color: #4d231c;
+  
+}
+
+.left-side, .right-side{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    width: 50%;
+    height: 100%;
+}
+
+
+.left-side svg{
+    width: 90%;
+    margin-top: 50vh;
+    transform: rotateX('50deg');
+}
+
+.right-side h2{
+    font-size: 2vw;
+    color: white;
+
+}
+
+.right-side p{
+    font-size: 1vw;
+    color: white;
+    width: 80%;
+    text-align: justify;
+}
+
+
+.three{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+    background: linear-gradient(150deg,  rgb(255,166,0), rgb(255,94,0));
+}
+
+
+.card{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+    height: 70vh;
+    gap: 2vh;
+    margin-top: 10vh;
+    border-radius: 20px;
+    flex-direction: column;
+    background-color: white;
+}
+
+.card h3{
+    margin-top: 45vh;
+    font-size: 3vw;
+    color: black;
+}
+
+.card button{
+    font-size: 1vw;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    background-color: orange;
+    padding: 1vw 2vw;
+
+}
+
+#Coca-Cola{
+    position: absolute;
+    width: 60%;
+    top: -15%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 2;
+}
+
+#pepsi{
+    position: absolute;
+    width: 85%;
+    top: -15%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 2;
+}
+
+.lemon{
+    position: absolute;
+    width: 25vw;
+    top: -35%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 1;
+
+
+}
+
+
+
